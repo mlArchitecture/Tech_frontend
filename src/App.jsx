@@ -43,8 +43,8 @@ export default function App() {
     async function getData() {
       try {
         setIsLoading(true);
-        const response_user = await axios.get("http://localhost:3000/api/users");
-        const response_comment = await axios.get("http://localhost:3000/api/comments");
+        const response_user = await axios.get("https://interiit-tech-siyv.vercel.app/api/users");
+        const response_comment = await axios.get("https://interiit-tech-siyv.vercel.app/api/comments");
         setUsers(response_user.data);
         setComments(response_comment.data);
       } catch (error) {

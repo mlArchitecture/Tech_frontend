@@ -32,7 +32,7 @@ function LoginPage({ onLogin, registeredUsers, onRegister }) {
     }
     
     try{
-      const response=await axios.post('http://localhost:3000/api/login',
+      const response=await axios.post('https://interiit-tech-siyv.vercel.app/api/login',
         {
           email:email,
           password:password
